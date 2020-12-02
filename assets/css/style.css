@@ -1,0 +1,24 @@
+/* =================================================================================== */
+/* Variables */
+:root  {
+    /* Fonts */
+    --titlefont: 'Oswald', sans-serif;
+    --bodyfont: 'Lato', sans-serif;
+    --textfont: 'Montserrat', sans-serif;
+    /* Colors */
+}
+
+/* =================================================================================== */
+/* Global */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--bodyfont);
+}
+/* =================================================================================== */
