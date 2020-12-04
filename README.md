@@ -65,7 +65,7 @@ These websites aid me in creating this README.
 > - [AOS](https://github.com/michalsnik/aos) || Where I get most of my animations for my site.
 > - [Wanted for Nothing](https://wantedfornothing.com/) || Most of my inspirations come from this site.
 > - [Awwwards](https://www.awwwards.com/95-inspiring-websites-of-web-design-agencies.html) || I browse through here alot for inspiration.
-> - [Medium] (https://medium.com/hackernoon/minimalist-design-30-best-minimalist-website-templates-examples-c6e5e35ffef9) || This site also has many great looking site that help guide me.
+> - [Medium](https://medium.com/hackernoon/minimalist-design-30-best-minimalist-website-templates-examples-c6e5e35ffef9) || This site also has many great looking site that help guide me.
 
 ## License
 
