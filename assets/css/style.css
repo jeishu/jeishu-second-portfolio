@@ -32,10 +32,81 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--textfont);
 }
-a {
+a, p {
     color: var(--offwhiteColor);
+    text-decoration: none;
 }
-/* Section CSS */
+img {
+    border: var(--offwhiteColor) .1rem solid;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+/* == Before and After P-Elements == */
+/* h1 */
+h1 {
+    color: var(--offwhiteColor);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    position: relative;
+}
+h1::before,
+#name:before {
+    content:"<h1>";
+    font-family: var(--htmlfont);
+    font-weight: normal;
+    font-size: 2rem;
+    transform: translate(-3rem, -2rem);
+    position: absolute;
+}
+h1::after,
+#name::after {
+    content:"</h1>";
+    font-family: var(--htmlfont);
+    font-weight: normal;
+    font-size: 2rem;
+    transform: translate(.5rem, 3rem);
+    position: absolute;
+}
+/* p element */
+p::before,
+#description::before {
+    content:"<p>";
+    font-family: var(--htmlfont);
+    font-weight: normal;
+    font-size: 2rem;
+    transform: translate(-2rem, -2rem);
+    position: absolute;
+}
+p::after,
+#description::after {
+    content:"</p>";
+    font-family: var(--htmlfont);
+    font-weight: normal;
+    font-size: 2rem;
+    transform: translate(1rem, 2rem);
+    position: absolute;
+}
+/* img */
+.profilepic::before {
+    content: "<img>";
+    font-family: var(--htmlfont);
+    font-weight: normal;
+    font-size: 2rem;
+    transform: translate(-2rem, -3rem);
+    position: absolute;
+}
+.profilepic::after {
+    content: "</img>";
+    font-family: var(--htmlfont);
+    font-weight: normal;
+    font-size: 2rem;
+    transform: translate(-1rem, 52rem);
+    position: absolute;
+}
+
+/* == Section CSS == */
 section {
     display: flex;
     flex-direction: column;
@@ -55,13 +126,13 @@ section {
     justify-content: flex-end;
 }
 .heading-title {
-    font-size: 10rem;
+    font-size: 8rem;
     padding-left: 10rem;
     color: var(--greyColor);
 }
 .heading-title span {
     color: transparent;
-    -webkit-text-stroke: 1px rgba(29, 29, 29, 0.7);
+    -webkit-text-stroke: 1px rgba(29, 29, 29, .9);
 }
 
 /* =================================================================================== */
@@ -77,22 +148,22 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .linemaker {
     width: .2rem;
     height: 5rem;
     background-color: var(--offwhiteColor);
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     cursor: pointer;
     transition: .5s;
 }
-a .linemaker:hover {
-    color: black;
+a:hover .linemaker {
+    background-color: rgb(148, 148, 148);
     filter: drop-shadow( 0 .2rem .5rem rgb(189, 189, 189));
     transition: .5s;
 }
-
 
 /* === Nav Bar === */
 .nav-bar {
@@ -234,57 +305,12 @@ header {
     margin-top: auto;
     margin-bottom: auto;
 }
-.title h1 {
-    color: var(--offwhiteColor);
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    position: relative;
-}
-.title h1::before {
-    content:"<h1>";
-    font-family: var(--htmlfont);
-    font-weight: normal;
-    font-size: 2rem;
-    transform: translate(-3rem, -2rem);
-    position: absolute;
-}
-.title h1::after {
-    content:"</h1>";
-    font-family: var(--htmlfont);
-    font-weight: normal;
-    font-size: 2rem;
-    transform: translate(.5rem, 3rem);
-    position: absolute;
-}
 .title p {
     color: var(--offwhiteColor);
     font-size: 2rem;
     position: relative;
 }
-.title p::before,
-.arrow-down p::before,
-#name:before,
-#description::before {
-    content:"<p>";
-    font-family: var(--htmlfont);
-    font-weight: normal;
-    font-size: 1.5rem;
-    transform: translate(-2rem, -2rem);
-    position: absolute;
-}
-.title p::after,
-.arrow-down p::after,
-#name::after,
-#description::after {
-    content:"</p>";
-    font-family: var(--htmlfont);
-    font-weight: normal;
-    font-size: 1.5rem;
-    transform: translate(1rem, 2rem);
-    position: absolute;
-}
+
 .arrow-down {
     display: flex;
     flex-direction: column;
@@ -298,7 +324,6 @@ header {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10rem;
-    cursor: pointer;
 }
 .arrow-down:hover p {
     animation-name: goingDown;
@@ -321,9 +346,9 @@ header {
     }
 }
 
+
 /* =================================================================================== */
 /* About Section */
-
 .about-content {
     display: flex;
     flex-direction: row;
@@ -355,7 +380,7 @@ header {
     margin-left: 2rem;
     line-height: 3.5rem;
 }
-figure{
+.profilepic {
     width: fit-content;
     height: auto;
     margin: 3rem;
@@ -366,23 +391,66 @@ img {
     width: 40rem;
     height: auto;
 }
-figure::before {
-    content: "<img>";
-    font-family: var(--htmlfont);
-    font-weight: normal;
-    font-size: 1.5rem;
-    transform: translate(-2rem, -3rem);
-    position: absolute;
+
+/* =================================================================================== */
+/* Projects Section */
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem;
+
+    width: 100%;
+    height: auto;
 }
-figure::after {
-    content: "</img>";
-    font-family: var(--htmlfont);
-    font-weight: normal;
-    font-size: 1.5rem;
-    transform: translate(1rem, 51rem);
-    position: absolute;
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    transition: .5s;
+}
+.project-card figure {
+    margin: 1rem;
+}
+.project-card h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--offwhiteColor);
+    
+}
+.project-card:hover {
+    background-color: white;
+    border-radius: 1rem;
+    transition: .5s;
+}
+.project-card:hover h2 {
+    color: var(--greyColor);
 }
 
+/* =================================================================================== */
+/* Footer */
+footer {
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer h4 {
+    width: 95%;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    border-top: rgb(107, 107, 107) 1px solid;
+    text-align: center;
+}
 /* =================================================================================== */
 
 /* Media Queries */
