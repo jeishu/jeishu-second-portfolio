@@ -20,11 +20,18 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
     <body>
+        <aside class="asidenav">
+            <a href="#header"><div class="linemaker"></div></a>
+            <a href="#aboutme"><div class="linemaker"></div></a>
+            <a href="#projects"><div class="linemaker"></div></a>
+        </aside>
+        <!-- === Navbar === -->
         <nav class="nav-bar">
             <div class="nav-menu">
                 <ul class="menu-parent" id="menu-hide">
-                    <li><a href=""><i class="fas fa-home"></i></a></li>
-                    <li><a href=""><i class="fas fa-code"></i></a></li>
+                    <li><a href="#header"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#aboutme"><i class="fas fa-user-alt"></i></a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i></a></li>
                     <li><a href=""><i class="fas fa-envelope"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/jeremy-zhu/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     <li><a href="https://www.instagram.com/jeremyishungry/" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -35,18 +42,47 @@
                 </div>
             </div>
         </nav>
-        <header>
+
+        <!-- Landing Page -->
+        <header id="header">
             <div class="title">
-                <h1>HI I'M JEREMY</h1>
-                <p>Full Stack Developer in Training</p>
+                <h1 data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-easing="linear">
+                    HI I'M <span>JEREMY</span>
+                </h1>
+                <p data-aos="fade-left" data-aos-delay="700" data-aos-offset="300" data-aos-easing="linear">
+                    Full Stack Developer <span data-aos="fade-left" data-aos-delay="2000" data-aos-offset="300" data-aos-easing="linear">in Training ...</span>
+                </p>
+            </div>
+            <div class="arrow-down">
+                <p><a href="#aboutme"><i class="fas fa-angle-double-down"></i></a></p>
             </div>
         </header>
 
-        <section>
-
+        <!-- About Me Page -->
+        <section id="aboutme">
+            <div class="heading-section about-section">
+                <p class="heading-title">about <span>me, myself, and i<span</p>
+            </div>
+            <div class="about-content">
+                <div class="info">
+                    <p id="name">Jeremy Zhu</p>
+                    <p id="description">I am currently a full stack developer in training at the UT Web Development Bootcamp. I have develop a love for web design since attending the bootcamp and still in the process of learning more about different frameworks and other coding languages. During my free time, I do photography as a hobby/passion, go on food adventures, and play videos games with friends. </p>
+                </div>
+                <figure>
+                    <img src="./assets/img/profilepic/profilpic.jpg" alt="">
+                </figure>
+            </div>
         </section>
-        
-        <!-- AOD JS -->
+        <section id="projects">
+            <div class="heading-section projects-section">
+                <p class="heading-title">projects <span>html, css, js<span</p>
+            </div>
+        </section>
+
+        <footer>
+
+        </footer>
+        <!-- AOS JS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
