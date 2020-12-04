@@ -1,8 +1,8 @@
-# Project Name
+# Jeremy's Web Dev Portfolio
 
 ## Description
 
-
+This is my newly made portfolio. I decided to not update my previous portfolio since the code on that was really messy. However, comparing my old one to my new tells me how much I have improved with HTML, CSS and Javascript.
 
 ## Table of Contents
 
@@ -10,7 +10,6 @@
 * [Links](#Links)
 * [Demo](#Demo)
 * [Language](#Language)
-* [Code-Example](#Code-Example)
 * [Developer-Notes](#Developer-Notes)
 * [Reference](#Reference)
 * [Contribute/Credits](#Contribute/Credits)
@@ -18,12 +17,20 @@
 
 ## Features
 Main Features: 
-
+- [x] Has a hamburger menu that will render a menu
+- [x] Has a side bar nav that will lead you to whatever page you there is.
+- [x] A single page with each section taking up 100vh of the height
+- [x] Better use of flexbox for better organization
+- [x] Much cleaner color scheme, but will update as I go.
+- [x] Utilized the Animation feature on CSS that I didn't use before.
+- [x] Included my previous projects with clickable links.
+- [] Animated on scroll effects
+- [] Mobile Responsive
 
 ## Links
 
-* Project Repo: [Repository]()
-* GitHub Page: [Website]()
+* Project Repo: [Repository](https://github.com/jeishu/jeishu.github.io)
+* GitHub Page: [Website](https://jeishu.github.io/)
 
 ## Demo
 
@@ -35,22 +42,17 @@ Main Features:
 * HTML
 * CSS
 
-
-## Code-Example
-
-
-
 ## Developer-Notes
 
 
 ## Reference
 
-These are websites I used to aid me in learning different syntax and different methods, functions, etc for Javascript.
+These are websites I used to aid me in making my portfolio.
 
-> - [Developer Mozilla](https://developer.mozilla.org/en-US/) || Learn a good amount of methods and functions here.
-> - [W3School](https://www.w3schools.com/) || jQuery Methods and uses were referenced here.
+> - [Developer Mozilla](https://developer.mozilla.org/en-US/) || JS functions, 
+> - [W3School](https://www.w3schools.com/) || HTML, CSS, JS, you name it, I come here for all my problems.
 > - [StackOverflow](https://www.stackoverflow.com/) || Most issues I had were resolved from looking at other people's problems.
-> - [CSS-Tricks](https://css-tricks.com/template-literals/) || CSSTRicks has an article on Template Literals, I used this as a guide to create my own.
+> - [CSS-Tricks](https://css-tricks.com/) || CSSTRicks has always been my favorite site to go to for help.
 
 These websites aid me in creating this README.
 
@@ -60,6 +62,10 @@ These websites aid me in creating this README.
 
 ## Contribute/Credits
 
+> - [AOS](https://github.com/michalsnik/aos) || Where I get most of my animations for my site.
+> - [Wanted for Nothing](https://wantedfornothing.com/) || Most of my inspirations come from this site.
+> - [Awwwards](https://www.awwwards.com/95-inspiring-websites-of-web-design-agencies.html) || I browse through here alot for inspiration.
+> - [Medium] (https://medium.com/hackernoon/minimalist-design-30-best-minimalist-website-templates-examples-c6e5e35ffef9) || This site also has many great looking site that help guide me.
 
 ## License
 
