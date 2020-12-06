@@ -21,9 +21,9 @@
 </head>
     <body>
         <aside class="asidenav">
-            <a href="#header"><div class="linemaker"></div></a>
-            <a href="#aboutme"><div class="linemaker"></div></a>
-            <a href="#projects"><div class="linemaker"></div></a>
+            <a href="#header"><div class="linemaker"data-aos="fade-right" data-aos-offset="300" data-aos-delay="300"></div></a>
+            <a href="#aboutme"><div class="linemaker" data-aos="fade-right" data-aos-offset="400" data-aos-delay="400"></div></a>
+            <a href="#projects"><div class="linemaker" data-aos="fade-right" data-aos-offset="500" data-aos-delay="500"></div></a>
         </aside>
         <!-- === Navbar === -->
         <nav class="nav-bar">
@@ -38,19 +38,22 @@
                     <li><a href="https://github.com/jeishu" target="_blank"><i class="fab fa-github"></i></a></li>
                 </ul>
                 <div class="menu-bar" id="menu-toggle">
-                    <div class="menu-button"></div>
+                    <div class="menu-button" data-aos="fade-left" ></div>
                 </div>
             </div>
         </nav>
 
         <!-- Landing Page -->
+        <!-- <video autoplay muted loop id="video">
+            <source src="./assets/img/video/bgvideo.mp4" type="video/mp4"></source>
+        </video> -->
         <header id="header">
             <div class="title">
                 <h1 data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-easing="linear">
                     HI I'M <span>JEREMY</span>
                 </h1>
                 <p data-aos="fade-left" data-aos-delay="700" data-aos-offset="300" data-aos-easing="linear">
-                    Full Stack Developer <span data-aos="fade-left" data-aos-delay="2000" data-aos-offset="300" data-aos-easing="linear">in Training ...</span>
+                    Full Stack Developer <span data-aos="fade-right" data-aos-delay="2000" data-aos-offset="300" data-aos-easing="linear">in Training ...</span>
                 </p>
             </div>
             <div class="arrow-down">
@@ -61,14 +64,14 @@
         <!-- About Me Page -->
         <section id="aboutme">
             <div class="heading-section about-section">
-                <h2 class="heading-title">about <span>me, myself, and i</span></h2>
+                <h2 class="heading-title" data-aos="fade-left">about <span>me, myself, and i</span></h2>
             </div>
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
                 <div class="info">
                     <p id="name">Jeremy Zhu</p>
                     <p id="description">I am currently a full stack developer in training at the UT Web Development Bootcamp. I have develop a love for web design since attending the bootcamp and still in the process of learning more about different frameworks and other coding languages. During my free time, I do photography as a hobby/passion, go on food adventures, and play videos games with friends. </p>
                 </div>
-                <figure class="profilepic">
+                <figure class="profilepic" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
                     <img src="./assets/img/profilepic/profilpic.jpg" alt="">
                 </figure>
             </div>
@@ -77,11 +80,11 @@
         <!-- Projects -->
         <section id="projects">
             <div class="heading-section projects-section">
-                <h2 class="heading-title">projects <span>html, css, js</span></h2>
+                <h2 class="heading-title" data-aos="fade-left">projects <span>html, css, js</span></h2>
             </div>
             <div class="project-container">
                 <a href="https://jonesliddy77.github.io/Persona/" target="_blank">
-                    <div class="project-card">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <figure>
                             <img src="./assets/img/projects/project1.png" alt="project one">
                         </figure>
@@ -89,7 +92,7 @@
                     </div>
                 </a>
                 <a href="https://jeishu.github.io/weather-dashboard/" target="_blank">
-                    <div class="project-card">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="500" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <figure>
                             <img src="./assets/img/projects/weather.png" alt="weatehr dashboard">
                         </figure>
@@ -97,7 +100,7 @@
                     </div>
                 </a>
                 <a href="https://jeishu.github.io/work-day-scheduler/" target="_blank">
-                    <div class="project-card">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="400" data-aos-easing="ease-in-sine">
                         <figure>
                             <img src="./assets/img/projects/scheduler.png" alt="scheduler">
                         </figure>
@@ -105,7 +108,7 @@
                     </div>
                 </a>
                 <a href="https://jeishu.github.io/timed-quiz/" target="_blank">
-                    <div class="project-card">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="400" data-aos-easing="ease-in-sine">
                         <figure>
                             <img src="./assets/img/projects/codequiz.png" alt="quiz">
                         </figure>
@@ -113,7 +116,7 @@
                     </div>
                 </a>
                 <a href="https://jeishu.github.io/password-generator/" target="_blank">
-                    <div class="project-card">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="900"  data-aos-offset="500" data-aos-easing="ease-in-sine">
                         <figure>
                             <img src="./assets/img/projects/password.png" alt="password">
                         </figure>
@@ -121,16 +124,14 @@
                     </div>
                 </a>
                 <a href="https://jeishu.github.io/first-portfolio/" target="_blank"> 
-                    <div class="project-card">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="900"  data-aos-offset="500" data-aos-easing="ease-in-sine">
                         <figure>
                             <img src="./assets/img/projects/firstportfolio.png" alt="">
                         </figure>
                         <h2>first portfolio</h2>
                     </div>
                 </a>
-                
             </div>
-            
         </section>
 
         <footer>

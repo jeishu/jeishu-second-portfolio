@@ -22,6 +22,7 @@
 html {
     font-size: 62.5%; /* Font size 10px */
     scroll-behavior: smooth; /* smooooooooth scroll */
+    overflow-x: hidden;
 }
 body {
     font-family: var(--bodyfont);
@@ -294,6 +295,13 @@ header {
     padding-right: 10rem;
     padding-left: 15rem;
 }
+/* #video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+} */
 .title {
     display: flex;
     flex-direction: column;
@@ -394,6 +402,9 @@ img {
 
 /* =================================================================================== */
 /* Projects Section */
+#projects {
+    height: 100vh;
+}
 .project-container {
     display: flex;
     flex-direction: row;
@@ -412,7 +423,7 @@ img {
     align-items: center;
     margin: 1rem;
     padding: 1rem;
-    transition: .5s;
+    transition: 1s;
 }
 .project-card figure {
     margin: 1rem;
@@ -454,19 +465,19 @@ footer h4 {
 /* =================================================================================== */
 
 /* Media Queries */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 
+}
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {  
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
