@@ -563,6 +563,10 @@ footer h4 {
     .asidenav {
         display: none;
     }
+    /* Navbar */
+    .menu-parent li {
+        padding: 1rem;
+    }
     /* Header */
     .title h1{
         font-size: 3rem;
@@ -599,7 +603,11 @@ footer h4 {
     }
 }
 @media only screen and (max-width: 500px) {
-      /* Header */
+    /* Navbar */
+    .menu-parent li a {
+        font-size: 1.5rem;
+    }
+    /* Header */
     .title h1{
         font-size: 1.6rem;
     }
@@ -608,6 +616,9 @@ footer h4 {
     }
     .heading-title {
         font-size: 3rem;
+    }
+    .arrow-down {
+        display: none;
     }
     /* Projects */
     .project-card figure img {
