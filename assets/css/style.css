@@ -53,7 +53,7 @@ h1 {
     position: relative;
 }
 h1::before,
-#name:before {
+.name:before {
     content:"<h1>";
     font-family: var(--htmlfont);
     font-weight: normal;
@@ -62,7 +62,7 @@ h1::before,
     position: absolute;
 }
 h1::after,
-#name::after {
+.name::after {
     content:"</h1>";
     font-family: var(--htmlfont);
     font-weight: normal;
@@ -72,7 +72,7 @@ h1::after,
 }
 /* p element */
 p::before,
-#description::before {
+.description::before {
     content:"<p>";
     font-family: var(--htmlfont);
     font-weight: normal;
@@ -81,7 +81,7 @@ p::before,
     position: absolute;
 }
 p::after,
-#description::after {
+.description::after {
     content:"</p>";
     font-family: var(--htmlfont);
     font-weight: normal;
@@ -119,12 +119,13 @@ section {
 }
 .heading-section {
     width: 100%;
-    height: 15vh;
+    height: auto;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
+    padding-top: 10rem;
 }
 .heading-title {
     font-size: 8rem;
@@ -377,13 +378,13 @@ header {
     order: 2;
     padding: 2rem;
 }
-#name {
+.name {
     width: fit-content;
     height: auto;
     font-size: 3rem;
     margin-bottom: 3rem;
 }
-#description {
+.description {
     font-size: 2rem;
     margin-left: 2rem;
     line-height: 3.5rem;
@@ -412,7 +413,6 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 10rem;
-
     width: 100%;
     height: auto;
 }
@@ -423,7 +423,7 @@ img {
     align-items: center;
     margin: 1rem;
     padding: 1rem;
-    transition: 1s;
+    transition: .5s;
 }
 .project-card figure {
     margin: 1rem;
@@ -431,12 +431,11 @@ img {
 .project-card h2 {
     margin-top: 1rem;
     font-size: 2rem;
-    color: var(--offwhiteColor);
-    
+    color: var(--offwhiteColor); 
 }
 .project-card:hover {
-    background-color: white;
-    border-radius: 1rem;
+    background-color: var(--offwhiteColor);
+    border-radius: 2rem;
     transition: .5s;
 }
 .project-card:hover h2 {
@@ -465,19 +464,153 @@ footer h4 {
 /* =================================================================================== */
 
 /* Media Queries */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+@media only screen and (max-width: 1440px) {
+    /* Globals */
+    .heading-title {
+        font-size: 5rem;
+    }
+    /* Projects */
+    #projects {
+        height: auto;
+    }
+    .project-container {
+        padding: 5rem 10rem 5rem 10rem;
+    }
 }
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
+@media only screen and (max-width: 1120px) {
+    /* Global */
+    .heading-section {
+        padding-top: 5rem;
+    }
+    /* About */
+    .name {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    /* Projects */
+    .project-container {        
+        flex-direction: column;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {  
-
+@media only screen and (max-width: 950px) {  
+    /* About */
+    .about-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        width: 100%;
+    }
+    .info {
+        justify-content: center;
+        align-items: center;
+    }
+    .name {
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .description {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        margin-left: 0;
+    }
 }
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 750px) {
+    /* Global */
+    header {
+        padding-right: 8rem;
+        padding-left: 10rem;
+    }
+    .heading-section {
+        align-items: center;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    .heading-title {
+        padding-left: 0;
+    }
+    /* About */
+    .profilepic img {
+        width: 30rem;        
+    }
+    .profilepic::before, .profilepic::after {
+        display: none;
+    }
+}
 @media only screen and (max-width: 600px) {
-    
+    /* Global */
+    .heading-title {
+        font-size: 4rem;
+    }
+    h1::before, 
+    p::before, 
+    h1::after, 
+    p::after,
+    .name::before,
+    .name::after,
+    .description::before,
+    .description::after {
+        font-size: 1.6rem;
+    }
+    /* Aside Bard */
+    .asidenav {
+        display: none;
+    }
+    /* Header */
+    .title h1{
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    .title p{
+        font-size: 1.5rem;
+    }
+    .arrow-down {
+        font-size: 1.6rem;
+    }
+    /* About */
+    .name {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .description {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .profilepic img {
+        width: 20rem;        
+    }
+    /* Projects */
+    .project-container {
+        padding: 2rem;
+    }
+    .project-card h2 {
+        font-size: 1.2rem;
+    }
+    .project-card figure img {
+        width: 30rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+      /* Header */
+    .title h1{
+        font-size: 1.6rem;
+    }
+    .title p{
+        font-size: 1.2rem;
+    }
+    .heading-title {
+        font-size: 3rem;
+    }
+    /* Projects */
+    .project-card figure img {
+        width: 20rem;
+    }
 }
