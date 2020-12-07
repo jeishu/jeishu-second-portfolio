@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremy Zhu</title>
-
+    
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Oswald&family=Marck+Script&display=swap" rel="stylesheet"/>  
@@ -22,31 +22,27 @@
     <body>
         <aside class="asidenav">
             <a href="#header"><div class="linemaker"data-aos="fade-right" data-aos-offset="300" data-aos-delay="300"></div></a>
-            <a href="#aboutme"><div class="linemaker" data-aos="fade-right" data-aos-offset="300" data-aos-delay="400"></div></a>
-            <a href="#projects"><div class="linemaker" data-aos="fade-right" data-aos-offset="300" data-aos-delay="500"></div></a>
+            <a href="#projects"><div class="linemaker" data-aos="fade-right" data-aos-offset="300" data-aos-delay="400"></div></a>
+            <a href="#aboutme"><div class="linemaker" data-aos="fade-right" data-aos-offset="300" data-aos-delay="500"></div></a>
         </aside>
         <!-- === Navbar === -->
         <nav class="nav-bar">
             <div class="nav-menu">
                 <ul class="menu-parent" id="menu-hide">
                     <li><a href="#header"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#aboutme"><i class="fas fa-user-alt"></i></a></li>
                     <li><a href="#projects"><i class="fas fa-code"></i></a></li>
+                    <li><a href="#aboutme"><i class="fas fa-user-alt"></i></a></li>
                     <li><a href=""><i class="fas fa-envelope"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/jeremy-zhu/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.instagram.com/jeremyishungry/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="https://github.com/jeishu" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/jeremyishungry/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </ul>
                 <div class="menu-bar" id="menu-toggle">
                     <div class="menu-button" data-aos="fade-right"></div>
                 </div>
             </div>
         </nav>
-
         <!-- Landing Page -->
-        <!-- <video autoplay muted loop id="video">
-            <source src="./assets/img/video/bgvideo.mp4" type="video/mp4"></source>
-        </video> -->
         <header id="header">
             <div class="title">
                 <h1 data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-easing="linear">
@@ -60,6 +56,85 @@
                 <p><a href="#aboutme" ><i class="fas fa-angle-double-down"></i></a></p>
             </div>
         </header>
+
+
+        
+        <!-- Projects -->
+        <section id="projects">
+            <div class="heading-section projects-section">
+                <h2 class="heading-title" data-aos="fade-right">projects <span>html, css, js</span></h2>
+            </div>
+            <div class="project-container">
+                <a href="https://jonesliddy77.github.io/Persona/" target="_blank">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <figure>
+                            <img src="./assets/img/projects/project1.png" alt="project one">
+                        </figure>
+                        <fieldset class="project-info">
+                            <legend>.persona</legend>
+                            <p>This was a collaboration project where I worked with 3 other developers to create a mock up sales website for freelance services. I was in charge of creating the web design aspects of the site.</p>
+                        </fieldset>
+                    </div>
+                </a>
+                <a href="https://jeishu.github.io/first-portfolio/" target="_blank"> 
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="700"  data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <figure>
+                            <img src="./assets/img/projects/firstportfolio.png" alt="">
+                        </figure>
+                        <fieldset class="project-info">
+                            <legend>first portfolio</legend>
+                            <p>My first portfolio project where I created the entire website from scratch. Mostly HTML and CSS was used.</p>
+                        </fieldset>
+                    </div>
+                </a>
+                <a href="https://jeishu.github.io/weather-dashboard/" target="_blank">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <figure>
+                            <img src="./assets/img/projects/weather.png" alt="weatehr dashboard">
+                        </figure>
+                        <fieldset class="project-info">
+                            <legend>weather dashboard</legend>
+                            <p>I used a weather API to call information to render information on the page. jQuery, local storage, and template literals were used in thin project.</p>
+                        </fieldset>
+                    </div>
+                </a>
+                <a href="https://jeishu.github.io/work-day-scheduler/" target="_blank">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <figure>
+                            <img src="./assets/img/projects/scheduler.png" alt="scheduler">
+                        </figure>
+                        <fieldset class="project-info">
+                            <legend>work day scheduler</legend>
+                            <p>This application uses Moment.js. The application was intended for normal working day workers to used for planning out their work hours.</p>
+                        </fieldset>
+                    </div>
+                </a>
+                <a href="https://jeishu.github.io/timed-quiz/" target="_blank">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <figure>
+                            <img src="./assets/img/projects/codequiz.png" alt="quiz">
+                        </figure>
+                        <fieldset class="project-info">
+                            <legend>code quiz</legend>
+                            <p>By utilizing CCS styles within JS, I created a code quiz for users to interact with the website. The application was intended for users to take a code quiz that is randomized each time it loads up.
+                            </p>
+                        </fieldset>
+                        
+                    </div>
+                </a>
+                <a href="https://jeishu.github.io/password-generator/" target="_blank">
+                    <div class="project-card" data-aos="flip-down" data-aos-duration="700"  data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <figure>
+                            <img src="./assets/img/projects/password.png" alt="password">
+                        </figure>
+                        <fieldset class="project-info">
+                            <legend>password generator</legend>
+                            <p>The application generates a random password. The password is generated when the user selects what character and how many characters they want in the password.</p>
+                        </fieldset>
+                    </div>
+                </a>
+            </div>
+        </section>
 
         <!-- About Me Page -->
         <section id="aboutme">
@@ -77,68 +152,18 @@
             </div>
         </section>
 
-        <!-- Projects -->
-        <section id="projects">
-            <div class="heading-section projects-section">
-                <h2 class="heading-title" data-aos="fade-right">projects <span>html, css, js</span></h2>
-            </div>
-            <div class="project-container">
-                <a href="https://jonesliddy77.github.io/Persona/" target="_blank">
-                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <figure>
-                            <img src="./assets/img/projects/project1.png" alt="project one">
-                        </figure>
-                        <h2>.persona</h2>
-                    </div>
-                </a>
-                <a href="https://jeishu.github.io/weather-dashboard/" target="_blank">
-                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <figure>
-                            <img src="./assets/img/projects/weather.png" alt="weatehr dashboard">
-                        </figure>
-                        <h2>weather dashboard</h2>
-                    </div>
-                </a>
-                <a href="https://jeishu.github.io/work-day-scheduler/" target="_blank">
-                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <figure>
-                            <img src="./assets/img/projects/scheduler.png" alt="scheduler">
-                        </figure>
-                        <h2>work day scheduler</h2>
-                    </div>
-                </a>
-                <a href="https://jeishu.github.io/timed-quiz/" target="_blank">
-                    <div class="project-card" data-aos="flip-down" data-aos-duration="700" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <figure>
-                            <img src="./assets/img/projects/codequiz.png" alt="quiz">
-                        </figure>
-                        <h2>code quiz</h2>
-                    </div>
-                </a>
-                <a href="https://jeishu.github.io/password-generator/" target="_blank">
-                    <div class="project-card" data-aos="flip-down" data-aos-duration="700"  data-aos-offset="200" data-aos-easing="ease-in-sine">
-                        <figure>
-                            <img src="./assets/img/projects/password.png" alt="password">
-                        </figure>
-                        <h2>password generator</h2>
-                    </div>
-                </a>
-                <a href="https://jeishu.github.io/first-portfolio/" target="_blank"> 
-                    <div class="project-card" data-aos="flip-down" data-aos-duration="700"  data-aos-offset="200" data-aos-easing="ease-in-sine">
-                        <figure>
-                            <img src="./assets/img/projects/firstportfolio.png" alt="">
-                        </figure>
-                        <h2>first portfolio</h2>
-                    </div>
-                </a>
-            </div>
-        </section>
-
         <footer>
             <h4>
-                <span style="color:lightsteelblue">Jeremy Zhu</span> <span style="color:white">© 2020</span>
+                <span style="color:rgb(0, 0, 0)">Jeremy Zhu</span> <span style="color:white">© 2020</span>
             </h4>
         </footer>
+
+        <canvas class="background"></canvas>
+
+<!-- ====== SCRIPT TAGS ====== -->
+        <!-- Particles.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+        <script src="path/to/particles.min.js"></script>
 
         <!-- AOS JS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -149,6 +174,11 @@
                     return window.innerWidth < maxWidth;
                 }
             });
+            window.onload = function() {
+                Particles.init({
+                    selector: '.background'
+                });
+            };
         </script>
 
         <!-- JavaScript -->

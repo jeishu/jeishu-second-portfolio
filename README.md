@@ -24,8 +24,8 @@ Main Features:
 - [x] Much cleaner color scheme, but will update as I go.
 - [x] Utilized the Animation feature on CSS that I didn't use before.
 - [x] Included my previous projects with clickable links.
-- [] Animated on scroll effects
-- [] Mobile Responsive
+- [x] Animated on scroll effects
+- [x] Mobile Responsive
 
 ## Links
 
