@@ -32,10 +32,6 @@ Main Features:
 * Project Repo: [Repository](https://github.com/jeishu/jeishu.github.io)
 * GitHub Page: [Website](https://jeishu.github.io/)
 
-## Demo
-
-![Nothing Here]()
-
 ## Language
 
 * JavaScript

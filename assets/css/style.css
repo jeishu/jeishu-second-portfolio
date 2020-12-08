@@ -383,6 +383,21 @@ header {
     order: 2;
     padding: 2rem;
 }
+.info a {
+    border: var(--greyColor) 1px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    transition: .5s;
+    box-shadow: 0 0 1rem 1rem rgba(29, 29, 29, .1);
+}
+.info a:hover {
+    border: var(--greyColor) 1px dotted;
+    box-shadow: none;
+    transition: .5s;
+}
 .name {
     width: fit-content;
     height: auto;
@@ -422,6 +437,10 @@ img {
     height: fit-content;
     z-index: 2;
 }
+.project-container a {
+    width: 100%;
+    height: auto;
+}
 .project-card {
     display: flex;
     flex-direction: row;
@@ -430,18 +449,19 @@ img {
     margin: 1rem;
     padding: 1rem;
     transition: .5s;
+    border-radius: 2rem;
 }
 .project-card figure {
     margin: 1rem;
 }
 .project-card:hover {
-    background-color: var(--offwhiteColor);
+    box-shadow: 0 0 2rem 1rem rgba(138, 138, 138, 0.5);
     border-radius: 2rem;
     transition: .5s;
 }
-.project-card:hover h2 {
+/* .project-card:hover h2 {
     color: var(--greyColor);
-}
+} */
 .project-info {
     display: flex;
     flex-direction: column;
